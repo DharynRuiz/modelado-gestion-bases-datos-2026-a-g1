@@ -1,0 +1,31 @@
+EJERCICIO
+
+SEMANA 1
+
+Una pequeña institución educativa lleva el control de estudiantes, asignaturas y notas únicamente en hojas de cálculo. Después de algunos semestres aparecen los siguientes síntomas:
+
+- Listas de estudiantes duplicadas y con nombres escritos de forma distinta.
+- Notas inconsistentes entre el acta del docente y el reporte enviado a coordinación.
+- Dificultad para saber el historial completo de un estudiante en todas las asignaturas.
+- Riesgo alto de pérdida de información al sobrescribir archivos.
+
+Desafío para el estudiante
+Tarea A: Identificación de problemas
+En equipos pequeños, identifique qué problemas del escenario están directamente relacionados con:
+
+Síntoma	Problema principal	¿Cómo ayuda un SGBD?
+Listas duplicadas de estudiantes	Redundancia de datos	Diseño de una única tabla de estudiantes con clave primaria.
+Notas inconsistentes	Falta de integridad	Restricciones de integridad y registros únicos por estudiante/asignatura.
+No hay historial consolidado	Consultas limitadas	Consultas SQL para obtener todas las notas de un estudiante en varias tablas.
+
+
+SOLUCION
+
+¿Qué criterios usaría para decidir cuándo migrar de archivos planos a un SGBD?
+RTA\\
+
+Después de validar modelos manuales que permitan tener un control de Axeso y manipulación compartida de los datos se vuelva insostenible y sea necesaria la flexibilidad que ofrece los SGBD migraría.
+
+¿Qué tipo de SGBD (relacional o NoSQL) parece más adecuado para este contexto y por qué?
+RTA\\
+MySQL permite mantener la integridad de los datos y evita los duplicados, eprmite hacer consultas entre otros
