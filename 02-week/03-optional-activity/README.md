@@ -4,7 +4,7 @@
 
 - Cardinalidad: ¿Cuántas instancias de una entidad se relacionan con cuántas de otra?
 - Participación: ¿Es obligatorio u opcional participar en una relación?
-- 
+  
 Construcción del diagrama ER completo 
 #### Pregunta para reflexionar: 
 - ¿Qué otras entidades podrían ser necesarias en un sistema académico real? Piensa en: aulas, horarios, prerrequisitos, calificaciones parciales...
@@ -20,4 +20,5 @@ Construcción del diagrama ER completo
 - este diagrama se puede observar que el cliente tiene una participacion total ya que si no hya cliente no hay producto ni pedido, con una cardinalidad de (1- N) respecto a la cantidad de pedidos que puede realizar.
 - tambien se puede observar que tiene una cardinalidad de (N - N) ya que muchos pedidos puede tener muchos prodcutos
 - su relacion es de realizar y contener, realiza n pedidos y ese n pedidos tiene n productos
+
 - en ese ejemplo sus atributos son los mas basicos para cada entidad
