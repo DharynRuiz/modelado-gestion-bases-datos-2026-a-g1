@@ -1,0 +1,47 @@
+Caso práctico: Una institución educativa desea desarrollar un sistema para gestionar estudiantes, 
+cursos y matrículas. A partir de esta situación, desarrolle las siguientes actividades.
+
+- DATOS = 8 COMO SE TRANSFORMA ESA INFORMACION UTIL PARA LA INSTITUCION
+ATRIBUTOS, CLAVES PRIMARIAS Y CARDINALES
+
+- DOCENTE RELACONAR CON CURSO INDICAR QUE CARDINALIDAD Y JUSTIFIQUE LA DECISION
+
+- GENERALIZACION DONDE PERSONA PUEDE ESPECIALIZARSE EN ESTUDIANTE O DOCENTE, DEFINIR SI LA ESPECIALIZACION ES TOTAL O PARCIAL, SI ES DISJOINT U OVERLAP, EXPICACIOJ BREVE DE POR QUE 
+CONVERTIR MODELO ER A MODELO RELACIONAL, LISTAR TABLAS RESULTANTES INDICACNDO NOMBRE DE TABLA, CLAVE PRIMARIA (PK) Y CLASE FORANEA (FK)
+ 
+INSTITUCION EDUCATIVA
+
+ ---------------------------------------------------------------------------
+|  ESTUDIANTES    |	CURSOS    | MATRICULAS    |  DOCENTE    | PERSONA   |
+|---------------------------------------------------------------------------|	
+|EDAD   	  |NOMBRE	  |               |DOCENTE_ID   |PERSONA_ID |
+|GENERO 	  |CURSO_ID       |     	  |     	|NOMBRE     |
+|PROGRAMA	  |CREDITOS	  |CODIGO_ID	  |ESPECIALIDAD |APELLIDO   |
+|IDENTIFICACION_ID|SEMESTRE       |PROGRAMA	  |		|CORREO     |
+|		  |HORAS          |MATRICULA_ID   |		|TELEFONO   |
+|        	  |PROGRAMA	  |FECHA	  |		|	    |
+|       	  |      	  |		  |		|	    |
+|		  |      	  |  		  |		|	    |
+ ----------------------------------------------------------------------------
+
+PUNTO 1
+
+1. Número de Identificación: Permite la identificación única del estudiante para evitar duplicidad de registros y asegurar la validez legal de su historial académico
+
+2. Nombre y Apellido: Facilita la personalización de la atención y es esencial para la generación de documentos oficiales como certificados y diplomas
+
+3. Fecha de Nacimiento: Permite calcular la edad promedio de la población estudiantil, ayudando a diseñar estrategias pedagógicas y culturales adecuadas al grupo
+
+4. Género: Se utiliza para generar estadísticas de diversidad, fundamentales para reportes gubernamentales y programas de bienestar institucional
+
+5. Correo Electrónico: Se convierte en el canal de comunicación oficial, asegurando que la información de notas y eventos llegue de forma directa al interesado
+
+6. Programa Académico: Permite medir la demanda por carrera, facilitando la asignación de recursos, docentes y salones de clase según la popularidad de cada área
+
+7. Nombre del Curso: Ayuda a organizar el catálogo de asignaturas y a estructurar el plan de estudios que cada estudiante debe seguir para graduarse
+
+8. Fecha de Matrícula: Permite monitorear el ritmo de inscripciones, identificando temporadas altas para mejorar la atención administrativa y financiera
+
+PUNTO 4
+
+La especialización es total ya que para poder integrarla en la base de datos que se nos plantea debe ser estudiante o docente para que el atributo persona no quede suelta en la base de datos, par mi concepto es OVERLAP en el atributo de docente ya que un docente puede convertirse en estudiante en algún punto 
