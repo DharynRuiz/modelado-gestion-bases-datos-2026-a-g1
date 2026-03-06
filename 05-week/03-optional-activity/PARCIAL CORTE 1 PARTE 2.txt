@@ -1,0 +1,33 @@
+EMPRESA DE FORMACION TECNICA
+
+DISEÑAR BASE DE DATOS PARA SU PLATAFORMA ACADEMICA, OFRECE CUSROS VIRTUALES Y PRESENCIALES
+
+
+CUROS---PERTENECE---AREA DE CONOCIMIENTO
+  |
+  |
+SE DIVIDE EN VARIOS COHORTES DE DISTINTOS PERIODOS ACADEMICOS
+
+
+COHORTE---DIVIDE---CODIGO UNICO (CODIGO_ID) =CUPO MAXIMO Y MODALIDAD VIRTUAL Y PRESENCIAL
+INSTRUCTORES PUEDEN DICTAR MUCLTIPLES COHORTES
+       1				N
+INSTRUCTORES ----- PUEDEN--- SER ESTUDIANTES (OVERLOP)  EN OTROS CORTES
+ESTUDIANTES ---PUEDEN--- INSCRIBIRSE EN VARIOS COHORTES POR PERIDO PERO NO PUEDEN INSCRIBIRSE DOS VECES EN EL MISMO COHORTE
+
+CORTE---FINALIZA--SE OTORGAN CERTIFICADOS OFICIALES
+CERTIFICADOS----VARIOS CURSOS
+	1	N
+DISEÑAR MODELO CONCEPTUAL SOLIDO ANTES DE INICIAR DESARROLLO DEL SISTEMA 
+DESARROLLO
+ ------------------------------------------------------------------------------------------------------------
+|  CURSO            | COHORTE   | PERIODO | INSTRUCTOR      | ESTUDIANTE         | PERSONA  | CERTIFICACION  |
+ ------------------------------------------------------------------------------------------------------------		
+|FECHA(FK)	    |FECHA(FK)  |PERIODO  |INSTRUCTOR_ID(PK)|EDAD		 |NOMBRE    |CERTIFICACION_ID|
+|NOMBRE		    |COHORTE_ID |FECHA	  |ESPECIALIDAD     |GENERO		 |APELLIDO  |FECHA(FK)       |
+|CURSO_ID(PK)	    |PERIODO(FK)|MODALIDAD|NOMBRE(FK)	    |IDENTIFIACION_ID(PK)|TELEFONO  |MODALIDAD(FK)   |
+|INSTRUCTOR_ID(FK)  |		|	  |APELLIDO(FK)     |NOMBRE(FK)	         |CORREO    |		     |
+|COHORTE (FK)	    |		|	  |                 |APELLIDO(FK)	 |IDENTIFIACION_ID(PK)          |		     |
+|PERIODO(FK)	    |		|	  |                 |CORREO(FK)	         |          |		     |
+|                   |           |         |                 |TELEFONO(FK)	 |	    |		     |
+ ------------------------------------------------------------------------------------------------------------
